@@ -1,0 +1,1074 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="interkassa-verification" content="8b043d19dd39a86704c388ff22b3da01">
+<meta name="csrf-token" content="KFhiqZjoW97yaAAjn1aPKrW2MFClTjkALhj3JD7D">
+<title>Открытие кейсов Standoff 2 — Staddy.gg</title>
+<meta name="description" content="Сайт №1 по открытию лучших кейсов Standoff 2. Минимальные цены и отличная окупаемость! Моментальный вывод скинов и множество бесплатных кейсов Стандофф.">
+<link rel="icon" type="image/png" href="icon.png">
+<meta name="keywords" content="кейсы standoff 2,открытие кейсов standoff 2,бесплатные кейсы standoff 2,дешевые кейсы standoff 2,магазин кейсы standoff 2,кейсы standoff 2 на сайте,кейсы standoff 2 купить,выгодные кейсы standoff 2,standoff 2 drop,кейсы standoff,opencase standoff2,standoff2 open case,открытие стандофф 2,staddydrop,standoff 2 cases,открыть кейсы Standoff">
+<link rel="stylesheet" href="ui/1.13.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="css/app-14.css?v=1676893905">
+<link rel="stylesheet" href="ajax/libs/animate.css/4.1.1/animate.min.css">
+
+<style>
+    [wire\:loading], [wire\:loading\.delay], [wire\:loading\.inline-block], [wire\:loading\.inline], [wire\:loading\.block], [wire\:loading\.flex], [wire\:loading\.table], [wire\:loading\.grid], [wire\:loading\.inline-flex] {
+        display: none;
+    }
+
+    [wire\:loading\.delay\.shortest], [wire\:loading\.delay\.shorter], [wire\:loading\.delay\.short], [wire\:loading\.delay\.long], [wire\:loading\.delay\.longer], [wire\:loading\.delay\.longest] {
+        display:none;
+    }
+
+    [wire\:offline] {
+        display: none;
+    }
+
+    [wire\:dirty]:not(textarea):not(input):not(select) {
+        display: none;
+    }
+
+    input:-webkit-autofill, select:-webkit-autofill, textarea:-webkit-autofill {
+        animation-duration: 50000s;
+        animation-name: livewireautofill;
+    }
+
+    @keyframes livewireautofill { from {} }
+</style>
+</head>
+<body>
+<div class="modal_overlay">
+<div class="modal_container">
+<div class="modal modal_auth animate__animated animate__zoomIn">
+<div class="header">Авторизация</div>
+<img src="images/modals/close.svg" alt="" class="close close_modal">
+<div class="methods_list">
+<a class="method steam" href="https://staddy.gg/api/auth/login_steam">
+<img src="images/modals/fa_steam-square.svg" alt=""> Войти через
+<br>
+Steam
+</a>
+<a href="https://staddy.gg/api/auth/login_vk" class="method vk" @click="login('vk')">
+<img src="images/modals/fa_vk-square.svg" alt=""> Войти через
+<br>
+ВКонтакте
+</a>
+<div class="method fb">
+<img src="images/modals/fa_fb-square.svg" alt=""> Войти через
+<br>
+FaceBook
+</div>
+<a href="https://staddy.gg/api/auth/login_google" class="method google">
+<img src="images/modals/fa_google-square.svg" alt=""> Войти через
+<br>
+Google
+</a>
+</div>
+</div>
+<div class="modal output_modal output_staddy animate__animated animate__zoomIn">
+<div class="header">
+<div class="title">Вывод предмета</div>
+  <img src="images/modals/close.svg" alt="" class="close close_modal">
+</div>
+<div class="list_step">
+<div class="step">
+<div class="title">
+Установите одинаковые аватарки
+</div>
+<div class="desc">
+В профиле на сайте и в игре Standoff 2
+</div>
+</div>
+<div class="step">
+<div class="title">
+Выберите любой скин
+</div>
+<div class="desc">
+Из списка ниже и выставите его на продажу на рынок в игре Standoff 2 по цене <b id="sum_calc"></b> Голды
+</div>
+</div>
+<div class="step">
+<div class="title">
+Перехватчики
+</div>
+<div class="desc">
+Не отменяйте вывод скина и не меняйте автарку, т.к вы будете первыми в списке. Если вы отменили, мы не несем отвестенности. Все выводы записываются.
+</div>
+</div>
+</div>
+<form class="footer" method="POST" action="https://staddy.gg/api/user/output_items">
+<input type="hidden" name="items">
+<input type="hidden" name="token">
+<input type="hidden" name="game" value="staddy">
+<input type="hidden" name="_token" value="KFhiqZjoW97yaAAjn1aPKrW2MFClTjkALhj3JD7D"> <div class="select_wrap" id="outputItem">
+<select class="select2" name="gun">
+<option value="StatTrack Tec-9 'Needle" selected="">StatTrack Tec-9 'Needle' (БОЛЕЕ БЫСТРЫЙ ВЫВОД)
+</option>
+<option value="FS 'Demonic Fog'">FS 'Demonic Fog'</option>
+<option value="UMP45 4 'Years">UMP45 4 'Years'(МЕДЛЕННЫЙ ВЫВОД)</option>
+</select>
+</div>
+<button type="submit" class="btn_global">Вывести</button>
+</form>
+</div>
+<div class="modal output_modal output_gta animate__animated animate__zoomIn">
+<div class="header">
+<div class="title">Вывод предмета</div>
+<img src="images/modals/close.svg" alt="" class="close close_modal">
+</div>
+<div class="list_step">
+<div class="step">
+<div class="title">
+Сервер
+</div>
+<div class="desc">
+Укажите название сервера
+</div>
+</div>
+<div class="step">
+<div class="title">
+Получатель
+</div>
+<div class="desc">
+Введите логин на этом сервере
+</div>
+</div>
+<div class="step">
+<div class="title">
+Получите предмет
+</div>
+<div class="desc">
+После осуществления вывода, на ваш аккаунт поступит предмет
+</div>
+</div>
+</div>
+<form class="footer" method="POST" action="https://staddy.gg/api/user/output_items">
+<input type="hidden" name="items">
+<input type="hidden" name="token">
+<input type="hidden" name="game" value="gta">
+<input type="hidden" name="_token" value="KFhiqZjoW97yaAAjn1aPKrW2MFClTjkALhj3JD7D"> <div class="select_wrap">
+<input type="text" name="name" placeholder="Сервер для вывода и номер">
+<input type="text" name="nick" placeholder="Логин на сервере">
+</div>
+<button type="submit" class="btn_global">Вывести</button>
+</form>
+</div>
+<div class="modal output_modal output_lol animate__animated animate__zoomIn" id="outputItemLol">
+<div class="header">
+<div class="title">Вывод предмета League of Legends</div>
+<img src="images/modals/close.svg" alt="" class="close close_modal">
+</div>
+<form class="footer normal" method="POST" action="https://staddy.gg/api/user/output_items">
+<input type="hidden" name="items">
+<input type="hidden" name="token">
+<input type="hidden" name="game" value="lol">
+<input type="hidden" name="_token" value="KFhiqZjoW97yaAAjn1aPKrW2MFClTjkALhj3JD7D"> <div class="select_wrap">
+<div class="lol-out">
+<div class="lol-out-field">
+<div class="lol-out-field-label">
+<div class="lol-out-field-label-counter">01</div>
+<div class="lol-out-field-label-value">Указать на каком сервере вы играете</div>
+</div>
+<div class="lol-out-field-content">
+<select class="select3" name="name">
+<option value="">-- Выберите сервер --</option>
+<option value="3">Europe West</option>
+<option value="4">Russian</option>
+<option value="5">Europe Nordic &amp; East</option>
+<option value="6">Japan</option>
+<option value="7">North America</option>
+</select>
+</div>
+</div>
+<div class="lol-out-field">
+<div class="lol-out-field-label">
+<div class="lol-out-field-label-counter">02</div>
+<div class="lol-out-field-label-value">Указать Ваш никнейм на этом сервере</div>
+</div>
+<div class="lol-out-field-content">
+<input type="text" name="nick" placeholder="Ник">
+</div>
+</div>
+<div class="lol-out-field">
+<div class="lol-out-field-label">
+<div class="lol-out-field-label-counter">03</div>
+<div class="lol-out-field-label-value">Оставить свои данные для связи (discord, skype,
+telegram, vk, inst)</div>
+</div>
+<div class="lol-out-field-content">
+<input type="text" name="contact" placeholder="Контакт">
+</div>
+</div>
+<div class="lol-out-field">
+<div class="lol-out-field-label">
+<div class="lol-out-field-label-counter">04</div>
+ <div class="lol-out-field-label-value">Необходимо добавить все следующие аккаунты:
+</div>
+</div>
+<div class="lol-out-field-content" data-event="nick">
+<div data-nick-event="empty">Сначала необходимо выбрать сервер, после чего появятся
+аккаунты, которые необходимо добавить</div>
+<div data-nick-event="items"></div>
+</div>
+</div>
+</div>
+</div>
+<button type="submit" class="btn_global">Вывести</button>
+</form>
+</div>
+<div class="modal output_modal replacement_lol animate__animated animate__zoomIn" id="replacementItemLol">
+<div class="header">
+<div class="title">Замена предметов League of Legends</div>
+<img src="images/modals/close.svg" alt="" class="close close_modal">
+</div>
+<div class="footer normal">
+<input type="hidden" name="items">
+<input type="hidden" name="token">
+<input type="hidden" name="game" value="lol">
+<input type="hidden" name="_token" value="KFhiqZjoW97yaAAjn1aPKrW2MFClTjkALhj3JD7D"> <div class="select_wrap">
+<div class="replacement-button">
+<button type="button" class="btn_global" data-replacement-event="replace">Заменить</button>
+</div>
+<div class="replacement">
+<div class="replacement-left">
+<div class="replacement-header">
+<div class="replacement-header-label">Ваши предметы</div>
+<div class="replacement-header-value" data-replacement-event="myitems"></div>
+</div>
+<div class="replacement-area" data-replacement-event="myitemsarea"></div>
+</div>
+<div class="replacement-divider"></div>
+<div class="replacement-right">
+<div class="replacement-header">
+<div class="replacement-header-label" data-replacement-event="allitems"></div>
+<div class="replacement-header-value">
+<input type="text" name="search" data-replacement-event="search" placeholder="Поиск...">
+</div>
+</div>
+<div class="replacement-area" data-replacement-event="allitemsarea"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="modal modal_contract animate__animated animate__zoomIn">
+<div class="item-block ">
+<div class="rare-blur"></div>
+<img src="images/icons/contract/gun_contract.webp" alt="" class="icon">
+</div>
+<div class="title">Вы получили</div>
+<div class="name"></div>
+<div class="surname"></div>
+<div class="price">120₽</div>
+<div class="actions">
+<div class="btn green">Продать за 800 руб.</div>
+<div class="btn close">Забрать</div>
+</div>
+</div>
+<div class="modal modal_vk-subscriber animate__animated animate__zoomIn">
+<div class="header">
+<div class="title">Подписка вконтакте</div>
+<svg class="close close_modal" viewbox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16.995 34C14.7626 34.0022 12.5516 33.5641 10.4887 32.7106C8.42573 31.8571 6.55132 30.605 4.97274 29.026C3.39417 27.447 2.14241 25.5722 1.28912 23.5087C0.435835 21.4453 -0.00222728 19.2337 8.51532e-06 17.0007V16.6608C0.0680027 13.3279 1.11368 10.0885 3.00708 7.34521C4.90048 4.6019 7.55812 2.47562 10.6497 1.23064C13.7413 -0.0143327 17.1304 -0.323114 20.396 0.342679C23.6616 1.00847 26.6595 2.61948 29.0173 4.97548C31.3961 7.3529 33.0163 10.3828 33.6729 13.6816C34.3295 16.9805 33.9929 20.4 32.7058 23.5074C31.4186 26.6149 29.2388 29.2705 26.4422 31.1383C23.6455 33.006 20.3578 34.002 16.995 34ZM16.995 19.3976L21.3967 23.8004L23.793 21.4035L19.3913 17.0007L23.793 12.5979L21.3967 10.201L16.995 14.6039L12.5933 10.201L10.197 12.5979L14.5987 17.0007L10.197 21.4035L12.5933 23.8004L16.995 19.3993V19.3976Z" fill="#857589"></path>
+</svg>
+</div>
+<div class="content">
+<div class="field-vk">
+<div class="field-vk-title">1. Привяжите VK к этому аккаунту</div>
+<div class="field-vk-content methods_list">
+<a href="https://staddy.gg/api/auth/login_vk_connect" class="field-vk-type" @click="login('vk')">
+<img src="images/modals/fa_vk-square.svg" alt="">
+<div class="field-vk-type-text">Привязать VK</div>
+</a>
+</div>
+</div>
+<div class="field-vk">
+<div class="field-vk-title">2. Подпишитесь на нашу группу и уведомления</div>
+<div class="field-vk-content" style="display: flex; align-items: center; flex-wrap: wrap;">
+<div id="vk_groups"></div>
+<div class="vk_sub" id="vk_allow_messages_from_community"></div>
+</div>
+</div>
+<div class="field-vk">
+<div class="field-vk-title">3. Получите бонус</div>
+<div class="field-vk-content" style="display: flex; align-items: center; flex-wrap: wrap;">
+<div class="bonusPage-social-button">
+<button type="submit" data-click="onActionSocial" data-social-id="vk">Получить</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="topbar">
+<div class="container">
+<div class="links">
+<a class="link" href="https://vk.com/topic-190301031_40265655?offset=880">Отзывы</a>
+
+<a class="link" href="index.htm">Топ пользователей</a>
+<a class="link" href="faq.html">FAQ</a>
+<a class="link" href="rangs.html">Ранги</a>
+</div>
+<div class="right">
+<div class="btns">
+<a href="index.htm" class="btn">Подписка</a>
+<a href="rangs.html" class="btn">Заработать</a>
+</div>
+<div class="social">
+<a href="https://vk.com/staddydrop1">
+<svg class="vk" viewbox="0 0 21 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M19.5636 1.78527C19.7021 1.32976 19.5636 0.994385 18.9003 0.994385H16.7104C16.1531 0.994385 15.8961 1.28388 15.7568 1.6034C15.7568 1.6034 14.6431 4.26972 13.0655 6.00166C12.5549 6.50389 12.323 6.66324 12.0443 6.66324C11.905 6.66324 11.6956 6.50389 11.6956 6.04755V1.78527C11.6956 1.23799 11.5421 0.994385 11.0782 0.994385H7.63439C7.2865 0.994385 7.0771 1.248 7.0771 1.48911C7.0771 2.00719 7.86631 2.12732 7.94724 3.58562V6.75417C7.94724 7.44912 7.8196 7.57509 7.54095 7.57509C6.79845 7.57509 4.99226 4.89626 3.92023 1.83116C3.71249 1.23465 3.50226 0.994385 2.94246 0.994385H0.750841C0.12514 0.994385 0 1.28388 0 1.6034C0 2.17237 0.742499 4.99887 3.45804 8.73723C5.2684 11.2901 7.81709 12.6741 10.1389 12.6741C11.5313 12.6741 11.7031 12.3671 11.7031 11.8374V9.90771C11.7031 9.29285 11.8349 9.17021 12.2763 9.17021C12.6016 9.17021 13.1581 9.33039 14.4579 10.5609C15.9429 12.0201 16.1873 12.6741 17.0232 12.6741H19.2132C19.8389 12.6741 20.1526 12.3671 19.9724 11.7598C19.7738 11.1558 19.0647 10.279 18.1245 9.23862C17.6139 8.64629 16.848 8.00808 16.6153 7.68855C16.2908 7.27893 16.3834 7.09622 16.6153 6.73165C16.6153 6.73165 19.2849 3.03918 19.5628 1.78527H19.5636Z" fill="#4C3C55"></path>
+</svg>
+</a>
+<a href='https://t.me/staddydrop'>
+<svg class="tg" viewbox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M15.0566 7.41715C15.0566 11.3333 11.8815 14.5084 7.9653 14.5084C4.04914 14.5084 0.874023 11.3333 0.874023 7.41715C0.874023 3.50099 4.04914 0.325867 7.9653 0.325867C11.8815 0.325867 15.0566 3.50099 15.0566 7.41715ZM8.21941 5.561C7.52978 5.84761 6.15112 6.4415 4.08401 7.3421C3.74836 7.47565 3.57226 7.60625 3.5563 7.73389C3.52912 7.95017 3.79977 8.03527 4.16733 8.1505C4.21756 8.16646 4.26956 8.18241 4.32275 8.20014C4.685 8.31774 5.17193 8.45543 5.42485 8.46075C5.65473 8.46547 5.9112 8.37092 6.19426 8.17709C8.12545 6.87289 9.12236 6.21399 9.185 6.19981C9.22932 6.18976 9.29078 6.17676 9.33215 6.21399C9.37351 6.25063 9.36938 6.32036 9.36524 6.33927C9.33806 6.45332 8.27791 7.4396 7.72834 7.95017C7.55696 8.10914 7.43582 8.22201 7.411 8.24801C7.35545 8.30533 7.29872 8.36029 7.24436 8.41288C6.90752 8.73672 6.65578 8.98018 7.25854 9.37729C7.5481 9.56817 7.77975 9.72595 8.01081 9.88314C8.26314 10.0551 8.51488 10.2265 8.84108 10.4404C8.92381 10.4948 9.00299 10.5509 9.08041 10.6059C9.3741 10.8156 9.63825 11.0036 9.96445 10.974C10.1536 10.9563 10.3497 10.7784 10.449 10.2472C10.6836 8.99082 11.1457 6.27013 11.2527 5.14853C11.2592 5.0554 11.2552 4.96184 11.2409 4.8696C11.2323 4.7951 11.196 4.72656 11.1392 4.67755C11.0547 4.60841 10.9235 4.59364 10.8645 4.59482C10.5979 4.59954 10.189 4.74196 8.21941 5.561Z" fill="#4C3C55"></path>
+</svg>
+</a>
+<a href="https://www.youtube.com/channel/UCzjy9aZz6ILElVkhSp29PVQ">
+<svg class="yt" viewbox="0 0 21 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20.5135 2.42151C20.4002 2.01709 20.1793 1.65094 19.8745 1.36199C19.561 1.06416 19.1769 0.851118 18.7582 0.742966C17.1915 0.330004 10.9144 0.330004 10.9144 0.330004C8.29762 0.300231 5.68144 0.431179 3.08066 0.72211C2.66202 0.838251 2.27857 1.05606 1.96441 1.35615C1.65573 1.65315 1.43215 2.0194 1.31535 2.42068C1.03478 3.93216 0.898462 5.46688 0.90823 7.00415C0.898219 8.54004 1.0342 10.0743 1.31535 11.5876C1.42965 11.9872 1.6524 12.3518 1.96191 12.6463C2.27142 12.9408 2.65686 13.1535 3.08066 13.2662C4.66828 13.6783 10.9144 13.6783 10.9144 13.6783C13.5346 13.7081 16.1541 13.5772 18.7582 13.2862C19.1769 13.178 19.561 12.965 19.8745 12.6672C20.1792 12.3783 20.3998 12.0121 20.5127 11.6076C20.8006 10.0967 20.9406 8.56139 20.9307 7.02334C20.9523 5.47878 20.8125 3.93702 20.5135 2.42151ZM8.91887 9.86068V4.14845L14.1414 7.00498L8.91887 9.86068Z" fill="#4C3C55"></path>
+</svg>
+</a>
+<a href="https://www.instagram.com/staddy.gg/">
+<svg class="inst" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.29009 5.49612C6.91139 5.49612 5.78626 6.62127 5.78626 7.99999C5.78626 9.37872 6.91139 10.5039 8.29009 10.5039C9.66879 10.5039 10.7939 9.37872 10.7939 7.99999C10.7939 6.62127 9.66879 5.49612 8.29009 5.49612ZM15.7997 7.99999C15.7997 6.96313 15.8091 5.93566 15.7508 4.90068C15.6926 3.69852 15.4184 2.6316 14.5393 1.75252C13.6584 0.871567 12.5934 0.599203 11.3912 0.540974C10.3544 0.482744 9.32693 0.492136 8.29197 0.492136C7.25512 0.492136 6.22767 0.482744 5.19271 0.540974C3.99057 0.599203 2.92368 0.873445 2.04461 1.75252C1.16367 2.63348 0.891315 3.69852 0.833087 4.90068C0.774858 5.93754 0.78425 6.96501 0.78425 7.99999C0.78425 9.03498 0.774858 10.0643 0.833087 11.0993C0.891315 12.3015 1.16555 13.3684 2.04461 14.2475C2.92556 15.1284 3.99057 15.4008 5.19271 15.459C6.22955 15.5172 7.257 15.5078 8.29197 15.5078C9.32881 15.5078 10.3563 15.5172 11.3912 15.459C12.5934 15.4008 13.6603 15.1265 14.5393 14.2475C15.4203 13.3665 15.6926 12.3015 15.7508 11.0993C15.811 10.0643 15.7997 9.03685 15.7997 7.99999ZM8.29009 11.8525C6.15817 11.8525 4.43762 10.1319 4.43762 7.99999C4.43762 5.86804 6.15817 4.14745 8.29009 4.14745C10.422 4.14745 12.1426 5.86804 12.1426 7.99999C12.1426 10.1319 10.422 11.8525 8.29009 11.8525ZM12.3003 4.88941C11.8026 4.88941 11.4006 4.48743 11.4006 3.98967C11.4006 3.4919 11.8026 3.08993 12.3003 3.08993C12.7981 3.08993 13.2001 3.4919 13.2001 3.98967C13.2002 4.10786 13.177 4.22493 13.1319 4.33416C13.0867 4.44339 13.0204 4.54263 12.9369 4.62621C12.8533 4.70979 12.7541 4.77606 12.6448 4.82122C12.5356 4.86638 12.4185 4.88955 12.3003 4.88941Z" fill="#4C3C55"></path>
+</svg>
+</a>
+<a href="https://www.tiktok.com/@staddy_gg">
+<svg class="tt" viewbox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.9999 4.6072V7.28304C13.9999 7.42498 13.9458 7.5611 13.8495 7.66146C13.7533 7.76182 13.6227 7.81821 13.4865 7.81821C12.4141 7.82114 11.357 7.55255 10.4061 7.03553V9.42371C10.4062 10.3909 10.1417 11.3381 9.64348 12.1541C9.14528 12.9701 8.43413 13.621 7.59349 14.0304C6.75285 14.4399 5.81762 14.5909 4.89755 14.4657C3.97748 14.3405 3.11076 13.9443 2.39912 13.3236C1.68749 12.7029 1.16046 11.8835 0.879904 10.9616C0.599348 10.0396 0.576904 9.05339 0.815206 8.11861C1.05351 7.18383 1.54267 6.3393 2.22527 5.68416C2.90787 5.02901 3.7556 4.59043 4.66893 4.4199C4.74222 4.40619 4.81748 4.40926 4.88951 4.4289C4.96154 4.44854 5.02861 4.48427 5.08607 4.53362C5.1453 4.58345 5.19285 4.64671 5.2251 4.71858C5.25735 4.79045 5.27345 4.86904 5.27217 4.94837V7.73124C5.27245 7.83258 5.24477 7.93186 5.19243 8.01726C5.14009 8.10265 5.0653 8.17056 4.97697 8.21289C4.76978 8.31576 4.59284 8.47465 4.46458 8.67301C4.33631 8.87138 4.26142 9.10196 4.24768 9.34075C4.23395 9.57954 4.28189 9.8178 4.38651 10.0307C4.49112 10.2436 4.64859 10.4234 4.8425 10.5513C5.03642 10.6793 5.25969 10.7507 5.48907 10.7581C5.71844 10.7655 5.94553 10.7087 6.14668 10.5935C6.34783 10.4784 6.51569 10.3091 6.63277 10.1034C6.74985 9.89763 6.81186 9.66293 6.81236 9.42371V0.861034C6.81236 0.719099 6.86645 0.582977 6.96273 0.482614C7.05901 0.38225 7.1896 0.325867 7.32576 0.325867H9.89274C10.0289 0.325867 10.1595 0.38225 10.2558 0.482614C10.352 0.582977 10.4061 0.719099 10.4061 0.861034C10.4061 1.71264 10.7307 2.52938 11.3084 3.13156C11.886 3.73374 12.6695 4.07204 13.4865 4.07204C13.6227 4.07204 13.7533 4.12842 13.8495 4.22878C13.9458 4.32915 13.9999 4.46527 13.9999 4.6072Z" fill="#4C3C55"></path>
+</svg>
+</a>
+</div>
+<div class="actions">
+<div class="action noty">
+<svg viewbox="0 0 12 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 15C6.825 15 7.5 14.3077 7.5 13.4615H4.5C4.5 13.8696 4.65804 14.2609 4.93934 14.5494C5.22064 14.8379 5.60218 15 6 15ZM10.5 10.3846V6.53846C10.5 4.17692 9.27 2.2 7.125 1.67692V1.15385C7.125 0.515385 6.6225 0 6 0C5.3775 0 4.875 0.515385 4.875 1.15385V1.67692C2.7225 2.2 1.5 4.16923 1.5 6.53846V10.3846L0 11.9231V12.6923H12V11.9231L10.5 10.3846Z" fill="#4E4057"></path>
+</svg>
+</div>
+<div class="action sound">
+<svg viewbox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M11.2007 8C11.2007 6.89062 10.4885 5.94063 9.47773 5.54063L8.93952 6.77187C9.44491 6.97187 9.79934 7.44688 9.79934 8.00313C9.79934 8.55625 9.44491 9.03125 8.93952 9.23438L9.47773 10.4656C10.4885 10.0594 11.2007 9.10938 11.2007 8ZM10.5541 3.07812L10.0159 4.30937C11.5354 4.9125 12.602 6.3375 12.602 8C12.602 9.66562 11.5354 11.0875 10.0159 11.6906L10.5541 12.9219C12.579 12.1187 14 10.2188 14 8C14 5.78125 12.579 3.88125 10.5541 3.07812ZM0 4.66563V11.3313H2.79934L7.69902 16V0L2.79934 4.66563H0Z" fill="#4E4057"></path>
+</svg>
+</div>
+<div class="action lang">
+<svg width="14" height="14" viewbox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_18_1010)">
+<path d="M14 10.5C14 10.9126 13.8361 11.3082 13.5444 11.6C13.2527 11.8917 12.857 12.0556 12.4444 12.0556H1.55556C1.143 12.0556 0.747335 11.8917 0.455612 11.6C0.163888 11.3082 0 10.9126 0 10.5V8.94446H14V10.5Z" fill="#CE2028"></path>
+<path d="M0 5.05554H14V8.94443H0V5.05554Z" fill="#22408C"></path>
+<path d="M12.4444 1.94446H1.55556C1.143 1.94446 0.747335 2.10835 0.455612 2.40007C0.163888 2.69179 0 3.08745 0 3.50001L0 5.05557H14V3.50001C14 3.08745 13.8361 2.69179 13.5444 2.40007C13.2527 2.10835 12.857 1.94446 12.4444 1.94446Z" fill="#EEEEEE"></path>
+</g>
+<defs>
+<clippath id="clip0_18_1010">
+<rect width="14" height="14" fill="white"></rect>
+</clippath>
+</defs>
+</svg>
+</div>
+</div>
+</div>
+</div>
+</div> <div class="navbar">
+<div class="container">
+<a class="logo" href="index.htm">
+
+
+<script type="text/javascript">
+   (function(m,e,t,r,i,k,a){m[i]=m[i]function(){(m[i].a=m[i].a[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(91093681, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="watch/91093681" style="position:absolute; left:-9999px;" alt=""></div></noscript>
+
+
+<script async="" src="gtag/js?id=G-7W3BFYMYHK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7W3BFYMYHK');
+</script>
+<img src="images/icons/logo3333.png" alt="">
+</a>
+<div class="links">
+<a class="link bonus" href="index.htm">
+<div class="text">Бонусы</div>
+</a>
+<a class="link wheel " href="wheel.html">
+<div class="text">Барабан</div>
+</a>
+<a class="link miner" href="index.htm">
+<div class="text">Miner</div>
+</a>
+<a class="link upgrade " href="index.htm">
+<div class="text">Апгрейд</div>
+</a>
+<a class="link contracts " href="index.htm">
+<div class="text">Контракты</div>
+</a>
+<a class="link battle" href="index.htm">
+<div class="text">Сражения</div>
+</a>
+</div>
+<div class="btn_global open_modal" data-modal="modal_auth">
+<div class="text">АВТОРИЗАЦИЯ</div>
+</div>
+</div>
+<div class="mobileMenu">
+<a class="link" href="wheel.html">Тех. Поддержка</a>
+<a class="link" href="rangs.html">Заработать</a>
+<a class="link" href="index.htm">Апгрейд</a>
+<a class="link" href="rangs.html">Ранги</a>
+<a class="link" href="faq.html">FAQ</a>
+<a class="link" href="index.htm">Минер</a>
+<a class="link" href="index.htm">Сражения</a>
+<a class="link" href="https://vk.com/topic-190301031_40265655?offset=880">Отзывы</a>
+
+<a class="link" href="index.htm">Топ пользователей</a>
+<a class="link" href="faq.html">FAQ</a>
+<a class="link" href="index.htm">Подписка</a>
+</div>
+<div class="mobileLinks">
+<a class="link bonus" href="index.htm">
+<img src="images/icons/navbar/bonus_white.svg" alt="" class="icon">
+<div class="text">Бонус</div>
+</a>
+<a class="link wheel" href="wheel.html">
+<img src="images/icons/navbar/wheel_white.svg" alt="" class="icon">
+<div class="text">Барабан</div>
+</a>
+<a class="link contracts" href="index.htm">
+<img src="images/icons/navbar/contracts_white.svg" alt="" class="icon">
+<div class="text">Контракты</div>
+</a>
+<div class="link menu">
+<img src="images/icons/navbar/menu.svg" alt="" class="icon">
+<div class="text">Меню</div>
+</div>
+</div>
+</div>
+<section class="welcome_section active">
+<div class="container">
+<img src="images/welcome/welcome_picture.webp" alt="" class="picture">
+<div class="text">Приветственный бонусный пакет <br> <b>открой бесплатные кейсы!</b></div>
+<div class="btns">
+<a href="bonus_case" class="btn red">5 бесплатных кейсов</a>
+</div>
+<div class="why-me_list">
+<div class="why-block">
+<img src="images/welcome/block_1.svg" alt="" class="bg">
+<img src="images/welcome/icon_block_3.svg" alt="" class="icon">
+<div class="content">
+<div class="label">Выдано</div>
+<div class="title">более 10.000.000</div>
+<div class="desc">предметов</div>
+</div>
+</div>
+<div class="why-block">
+<img src="images/welcome/block_2.svg" alt="" class="bg">
+<img src="images/welcome/icon_block_2.svg" alt="" class="icon">
+<div class="content">
+<div class="label">Скорость</div>
+<div class="title">Быстрый вывод</div>
+<div class="desc">или получи бонус</div>
+</div>
+</div>
+<div class="why-block">
+<img src="images/welcome/block_3.svg" alt="" class="bg">
+<img src="images/welcome/icon_block_1.svg" alt="" class="icon">
+<div class="content">
+<div class="label">Надежность</div>
+<div class="title">Работаем с 2019</div>
+<div class="desc">года</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<div class="livedrop-section">
+<div class="tabs">
+<div class="btn active" data-open="best">
+<svg width="14" height="12" viewbox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.533936 3.02971L4.80512 4.27723L7.00004 0.47525L9.19495 4.27723L13.4661 3.02971L11.5085 8.91089H2.49156L0.533936 3.02971ZM6.94072 4.51485C6.71037 4.54465 6.49502 4.7466 6.34015 5.07806C6.18528 5.40952 6.103 5.84454 6.1107 6.29125C6.1184 6.73796 6.21547 7.16139 6.38141 7.47213C6.54736 7.78286 6.76918 7.95657 7.00004 7.95657C7.2309 7.95657 7.45272 7.78286 7.61866 7.47213C7.7846 7.16139 7.88167 6.73796 7.88937 6.29125C7.89707 5.84454 7.8148 5.40952 7.65992 5.07806C7.50505 4.7466 7.2897 4.54465 7.05936 4.51485H6.94072ZM11.2712 9.62376L10.6187 11.5842H3.38139L2.72885 9.62376" fill="white"></path>
+</svg>
+топ
+</div>
+<div class="btn" data-open="default">
+<svg width="22" height="22" viewbox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.75 11C13.75 12.5188 12.5188 13.75 11 13.75C9.48122 13.75 8.25 12.5188 8.25 11C8.25 9.48122 9.48122 8.25 11 8.25C12.5188 8.25 13.75 9.48122 13.75 11Z" fill="white"></path>
+<path d="M5.5 11C5.5 12.5188 4.26878 13.75 2.75 13.75C1.23122 13.75 0 12.5188 0 11C0 9.48122 1.23122 8.25 2.75 8.25C4.26878 8.25 5.5 9.48122 5.5 11Z" fill="white"></path>
+<path d="M22 11C22 12.5188 20.7688 13.75 19.25 13.75C17.7312 13.75 16.5 12.5188 16.5 11C16.5 9.48122 17.7312 8.25 19.25 8.25C20.7688 8.25 22 9.48122 22 11Z" fill="white"></path>
+</svg>
+все
+</div>
+</div>
+<div class="list_items">
+<div class="list best">
+<a wire:id="y3B24XJi2VDG7Ruw7E27" wire:initial-data="{&quot;fingerprint&quot;:{&quot;id&quot;:&quot;y3B24XJi2VDG7Ruw7E27&quot;,&quot;name&quot;:&quot;livedrop&quot;,&quot;locale&quot;:&quot;en&quot;,&quot;path&quot;:&quot;\/&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;v&quot;:&quot;acj&quot;},&quot;effects&quot;:{&quot;listeners&quot;:[]},&quot;serverMemo&quot;:{&quot;children&quot;:[],&quot;errors&quot;:[],&quot;htmlHash&quot;:&quot;e3b0d4c9&quot;,&quot;data&quot;:[],&quot;dataMeta&quot;:[],&quot;checksum&quot;:&quot;006040489d386436d17a336edd0e9d45e17db9a4991b6539f9ed76d909fe5bcd&quot;}}" href="user/37371.html" class="item legendary">
+<img src="images/icons/livedrop/legendary_label.webp" alt="" class="label">
+<img src="uploads/31313_1669230064.png" alt="" class="icon_item">
+<div class="info">
+<div class="title">ХАЛК </div>
+<div class="title user">Kirill Panov </div>
+<div class="name">SPAS Octopus</div>
+</div>
+<img src="uploads/hulk1_1669251035.png" alt="" class="case_icon">
+<img src="uploads/img_20230119_184013_1674732729.jpg" alt="" class="user_icon">
+</a>
+<a href="user/152563.html" class="item legendary">
+<img src="images/icons/livedrop/legendary_label.webp" alt="" class="label">
+<img src="uploads/charmsale_1651461334.png" alt="" class="icon_item">
+<div class="info">
+<div class="title">ЛЕГЕНДАРНЫЙ... </div>
+<div class="title user">Ирума </div>
+<div class="name">Charm Sale</div>
+</div>
+<img src="uploads/3_legendary_1653365431.png" alt="" class="case_icon">
+<img src="uploads/screenshot_20211007_171126_video_player_1676363154.jpg" alt="" class="user_icon">
+</a>
+<a href="user/129797.html" class="item arcana">
+<img src="images/icons/livedrop/arcana_label.webp" alt="" class="label">
+<img src="uploads/akrtagking_1651449122.png" alt="" class="icon_item">
+<div class="info">
+<div class="title">ЧЕЛОВЕК ПАУК </div>
+<div class="title user">Ринат Аюпов </div>
+<div class="name">AKR Tag King</div>
+</div>
+<img src="uploads/pavuk_1669250733.png" alt="" class="case_icon">
+<img src="uploads/img_20230124_095328_883_1676867386.jpg" alt="" class="user_icon">
+</a>
+<a href="user/128089.html" class="item mythical">
+<img src="images/icons/livedrop/mythical_label.webp" alt="" class="label">
+<img src="uploads/g22monster_1651459153.png" alt="" class="icon_item">
+<div class="info">
+<div class="title">Железный... </div>
+<div class="title user">denisskiba556 </div>
+<div class="name">G22 Monster</div>
+</div>
+<img src="uploads/ironman_1669250001.png" alt="" class="case_icon">
+<img src="uploads/j1dqbop_svhyu7_utc4yzlzhkb_vnxskeke_h0l4ot0mgaqqiznjf786lrbb0zjkzktrlxiqrbnnizmog_hyyg5j_1674776137.jpg" alt="" class="user_icon">
+</a>
+<a href="user/128089.html" class="item immortal">
+<img src="images/icons/livedrop/immortal_label.webp" alt="" class="label">
+<img src="uploads/awmdragon_1651446607.png" alt="" class="icon_item">
+<div class="info">
+<div class="title">ТОЛЬКО AWM </div>
+<div class="title user">denisskiba556 </div>
+<div class="name">StatTrack AWM Dragon</div>
+</div>
+<img src="uploads/5onlyawm_1654270702.png" alt="" class="case_icon">
+<img src="uploads/j1dqbop_svhyu7_utc4yzlzhkb_vnxskeke_h0l4ot0mgaqqiznjf786lrbb0zjkzktrlxiqrbnnizmog_hyyg5j_1674776137.jpg" alt="" class="user_icon">
+</a>
+<a href="user/157959.html" class="item immortal">
+<img src="images/icons/livedrop/immortal_label.webp" alt="" class="label">
+<img src="uploads/ump45beast_1651452400.png" alt="" class="icon_item">
+<div class="info">
+<div class="title">Футбол </div>
+<div class="title user">Полл </div>
+<div class="name">StatTrack UMP45 Beast</div>
+</div>
+<img src="uploads/footbool_1655780808.png" alt="" class="case_icon">
+<img src="uploads/08ff29263cff28a3df0668a1b90bbcf4_1676842145.jpg" alt="" class="user_icon">
+</a>
+<a href="user/157959.html" class="item immortal">
+<img src="images/icons/livedrop/immortal_label.webp" alt="" class="label">
+<img src="uploads/sm1014wave_1651455359.png" alt="" class="icon_item">
+<div class="info">
+<div class="title">КАЛИБРОВКА </div>
+<div class="title user">Полл </div>
+<div class="name">StatTrack SM1014...</div>
+</div>
+<img src="uploads/calibrovka_1655775313.png" alt="" class="case_icon">
+<img src="uploads/08ff29263cff28a3df0668a1b90bbcf4_1676842145.jpg" alt="" class="user_icon">
+</a>
+<a href="user/55795.html" class="item mythical">
+<img src="images/icons/livedrop/mythical_label.webp" alt="" class="label">
+<img src="uploads/g22monster_1651459153.png" alt="" class="icon_item">
+<div class="info">
+<div class="title">ЭПИЧЕСКИЙ КЕЙС </div>
+<div class="title user">Тимон </div>
+<div class="name">G22 Monster</div>
+</div>
+<img src="uploads/2_epic_1653365373.png" alt="" class="case_icon">
+<img src="uploads/img_20221204_160410_854_1670771157.jpg" alt="" class="user_icon">
+</a>
+<a href="user/55795.html" class="item mythical">
+<img src="images/icons/livedrop/mythical_label.webp" alt="" class="label">
+<img src="uploads/christmastree_1651460704.png" alt="" class="icon_item">
+<div class="info">
+<div class="title">ЭПИЧЕСКИЙ КЕЙС </div>
+<div class="title user">Тимон </div>
+<div class="name">Charm Christmas Tree</div>
+</div>
+<img src="uploads/2_epic_1653365373.png" alt="" class="case_icon">
+<img src="uploads/img_20221204_160410_854_1670771157.jpg" alt="" class="user_icon">
+</a>
+<a href="user/64446.html" class="item arcana">
+<img src="images/icons/livedrop/arcana_label.webp" alt="" class="label">
+<img src="uploads/famas_fury_1651449660.png" alt="" class="icon_item">
+<div class="info">
+<div class="title">Furious Case </div>
+<div class="title user">Maxim Polikhov </div>
+<div class="name">FAMAS Fury</div>
+</div>
+<img src="uploads/furiuscase1_1653359590.png" alt="" class="case_icon">
+<img src="s/v1/ig2/tUEDEexoMGTEHBJWQbvM0h18Ov6QkllFBpmj-9AJkMN07ry5v0gCXDE_HWcHhTR4fc8dYBgq7V6W7J-70LRfYOY-.jpg?size=200x200&amp;quality=95&amp;crop=3,0,1268,1268&amp;ava=1" alt="" class="user_icon">
+</a>
+<a href="user/64446.html" class="item immortal">
+<img src="images/icons/livedrop/immortal_label.webp" alt="" class="label">
+<img src="uploads/awm_gear_1651446443.png" alt="" class="icon_item">
+<div class="info">
+<div class="title">Furious Case </div>
+<div class="title user">Maxim Polikhov </div>
+<div class="name">StatTrack AWM Gear</div>
+</div>
+<img src="uploads/furiuscase1_1653359590.png" alt="" class="case_icon">
+<img src="s/v1/ig2/tUEDEexoMGTEHBJWQbvM0h18Ov6QkllFBpmj-9AJkMN07ry5v0gCXDE_HWcHhTR4fc8dYBgq7V6W7J-70LRfYOY-.jpg?size=200x200&amp;quality=95&amp;crop=3,0,1268,1268&amp;ava=1" alt="" class="user_icon">
+</a>
+<a href="user/151394.html" class="item immortal">
+<img src="images/icons/livedrop/immortal_label.webp" alt="" class="label">
+<img src="uploads/ump45whitecarbon_1651452537.png" alt="" class="icon_item">
+<div class="info">
+<div class="title">ДЭДПУЛ </div>
+<div class="title user">lokgoing </div>
+<div class="name">StatTrack UMP45 White...</div>
+</div>
+<img src="uploads/deadpool_1669250843.png" alt="" class="case_icon">
+<img src="uploads/cdcf29ef_fa98_45c8_b2a9_5a593904fc6a_1676838578.jpeg" alt="" class="user_icon">
+</a>
+<a href="user/151394.html" class="item immortal">
+<img src="images/icons/livedrop/immortal_label.webp" alt="" class="label">
+<img src="uploads/awmdragon_1651446607.png" alt="" class="icon_item">
+<div class="info">
+<div class="title">ВЗРЫВНАЯ... </div>
+<div class="title user">lokgoing </div>
+<div class="name">StatTrack AWM Dragon</div>
+</div>
+<img src="uploads/bomblove_1676241472.png" alt="" class="case_icon">
+<img src="uploads/cdcf29ef_fa98_45c8_b2a9_5a593904fc6a_1676838578.jpeg" alt="" class="user_icon">
+</a>
+<a href="user/151394.html" class="item arcana">
+<img src="images/icons/livedrop/arcana_label.webp" alt="" class="label">
+<img src="uploads/jkommando_reaper_1651444713.png" alt="" class="icon_item">
+<div class="info">
+<div class="title">Burberry </div>
+<div class="title user">lokgoing </div>
+<div class="name">jKommando Reaper</div>
+</div>
+<img src="uploads/st_burberry_box_1673771798.gif" alt="" class="case_icon">
+<img src="uploads/cdcf29ef_fa98_45c8_b2a9_5a593904fc6a_1676838578.jpeg" alt="" class="user_icon">
+</a>
+<a href="user/157881.html" class="item arcana">
+<img src="images/icons/livedrop/arcana_label.webp" alt="" class="label">
+<img src="uploads/awm_genesis_1651445867.png" alt="" class="icon_item">
+<div class="info">
+<div class="title">ДЭДПУЛ </div>
+ <div class="title user">𝕶𝖀𝕽𝕺... </div>
+<div class="name">AWM Genesis</div>
+</div>
+<img src="uploads/deadpool_1669250843.png" alt="" class="case_icon">
+<img src="uploads/img_20230215_185928_1676836781.jpg" alt="" class="user_icon">
+</a>
+<a href="user/153018.html" class="item immortal">
+<img src="images/icons/livedrop/immortal_label.webp" alt="" class="label">
+<img src="uploads/tec9reactor_1651457476.png" alt="" class="icon_item">
+<div class="info">
+<div class="title">Dead Inside </div>
+<div class="title user">Kuro (カタシ) </div>
+<div class="name">StatTrack TEC9 Reactor</div>
+</div>
+<img src="uploads/deninsade_1676272999.png" alt="" class="case_icon">
+<img src="uploads/img_20230215_185928_1676862715.jpg" alt="" class="user_icon">
+</a>
+<a href="user/154436.html" class="item arcana">
+<img src="images/icons/livedrop/arcana_label.webp" alt="" class="label">
+<img src="uploads/awm_genesis_1651445867.png" alt="" class="icon_item">
+<div class="info">
+<div class="title">ДЭДПУЛ </div>
+<div class="title user">Vladislav Tsyplenkov </div>
+<div class="name">AWM Genesis</div>
+</div>
+<img src="uploads/deadpool_1669250843.png" alt="" class="case_icon">
+<img src="uploads/img_20230215_185928_1676542258.jpg" alt="" class="user_icon">
+</a>
+<a href="user/122231.html" class="item mythical">
+<img src="images/icons/livedrop/mythical_label.webp" alt="" class="label">
+<img src="uploads/mp7_2_years_1651450984.png" alt="" class="icon_item">
+<div class="info">
+<div class="title">contract_type </div>
+<div class="title user">Роман... </div>
+<div class="name">MP7 2 Years</div>
+</div>
+<img src="uploads/contracts1_1656397309.png" alt="" class="case_icon">
+<img src="uploads/img_20230218_200603_852_1676832349.jpg" alt="" class="user_icon">
+</a>
+<a href="user/30115.html" class="item arcana">
+<img src="images/icons/livedrop/arcana_label.webp" alt="" class="label">
+<img src="uploads/p350_forest_spirit_1651457611.png" alt="" class="icon_item">
+<div class="info">
+<div class="title">Гринч </div>
+<div class="title user">Ilya Pisarev </div>
+<div class="name">P350 Forest Spirit</div>
+</div>
+<img src="uploads/grinz_1670500207.png" alt="" class="case_icon">
+<img src="s/v1/ig2/OxhZZtjRdS5NO21rNV9EpEmMCgc3oKf71vjtWlp2pMjGEMtBY1cjxQ1A2YXjd1HcYS4tcOzck4QNB7HJZYVs2hD9.jpg?size=200x200&amp;quality=95&amp;crop=62,2,938,938&amp;ava=1" alt="" class="user_icon">
+</a>
+<a href="user/157693.html" class="item mythical">
+<img src="images/icons/livedrop/mythical_label.webp" alt="" class="label">
+<img src="uploads/christmastree_1651460704.png" alt="" class="icon_item">
+<div class="info">
+<div class="title">Брелки </div>
+<div class="title user">Vlad Troshin </div>
+<div class="name">Charm Christmas Tree</div>
+</div>
+<img src="uploads/5_brelki_1653365664.png" alt="" class="case_icon">
+<img src="s/v1/ig2/__Ml64H99RkvW8wW8gdwer4u1LgD4NfZKtmZtwnoI0ZlIzk1kEKedp7Dl28LnsvLrCxtSiR5aLXOKQBgOT6X-rN9.jpg?size=200x200&amp;quality=95&amp;crop=195,3,569,569&amp;ava=1" alt="" class="user_icon">
+</a>
+ </div>
+<div class="list default" style="display: none">
+</div>
+</div>
+ <div class="online">
+<svg width="21" height="21" viewbox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10.5 9.625C9.53312 9.625 8.75 10.4081 8.75 11.375C8.75 12.3419 9.53312 13.125 10.5 13.125C11.4669 13.125 12.25 12.3419 12.25 11.375C12.25 10.4081 11.4669 9.625 10.5 9.625ZM15.75 11.375C15.75 8.47438 13.4006 6.125 10.5 6.125C7.59937 6.125 5.25 8.47438 5.25 11.375C5.25 13.3175 6.30437 15.0063 7.87063 15.9163L8.75437 14.3938C7.70875 13.7856 7 12.67 7 11.375C7 9.44125 8.56625 7.875 10.5 7.875C12.4338 7.875 14 9.44125 14 11.375C14 12.67 13.2913 13.7856 12.2456 14.3894L13.1294 15.9119C14.6956 15.0063 15.75 13.3175 15.75 11.375ZM10.5 2.625C5.66562 2.625 1.75 6.54063 1.75 11.375C1.75 14.6081 3.50875 17.4256 6.12063 18.9394L6.99563 17.4256C4.90875 16.2181 3.5 13.9606 3.5 11.375C3.5 7.5075 6.6325 4.375 10.5 4.375C14.3675 4.375 17.5 7.5075 17.5 11.375C17.5 13.9606 16.0912 16.2181 14.0044 17.43L14.8794 18.9438C17.4912 17.4256 19.25 14.6081 19.25 11.375C19.25 6.54063 15.33 2.625 10.5 2.625Z" fill="white"></path>
+</svg>
+<div class="info">
+<b>
+...
+</b>
+онлайн
+</div>
+</div>
+</div>
+<section class="tabs_games">
+<div class="container">
+<a class="tab csgo " href="index-1.htm?game=1">
+<img src="uploads/standoff_1653223556.svg" alt="">
+</a>
+<a class="tab csgo " href="index-2.htm?game=4">
+<img src="uploads/gtarp_1659366590.png" alt="">
+</a>
+<a class="tab csgo active" href="index-3.htm?game=7">
+<img src="uploads/lol_1668172433.png" alt="">
+</a>
+<a class="tab csgo " href="index-4.htm?game=8">
+<img src="uploads/csgo_1668172279.png" alt="">
+</a>
+</div>
+</section>
+<div class="container__cases">
+<div class="section_cases">
+<div class="title_section">
+<div class="back">КОЛЛЕКЦИИ</div>
+<div class="name">КОЛЛЕКЦИИ</div>
+</div>
+<div class="case_list">
+<a href="case/high-noon.html" class="case ">
+<img src="uploads/highnoon_1669692761.png" class="icon_case" alt="">
+<div class="info">
+<div class="name">HIGH NOON</div>
+<div class="price">
+299 ₽
+</div>
+</div>
+</a>
+<a href="case/project.html" class="case ">
+<img src="uploads/irelia_1669692460.png" class="icon_case" alt="">
+<div class="info">
+<div class="name">PROJECT</div>
+<div class="price">
+299 ₽
+</div>
+</div>
+</a>
+<a href="case/sentinel.html" class="case ">
+<img src="uploads/sentinel_1669692536.png" class="icon_case" alt="">
+<div class="info">
+<div class="name">SENTINEL</div>
+<div class="price">
+299 ₽
+</div>
+</div>
+</a>
+<a href="case/musical.html" class="case ">
+<img src="uploads/evel_1669692614.png" class="icon_case" alt="">
+<div class="info">
+<div class="name">MUSICAL</div>
+<div class="price">
+299 ₽
+</div>
+</div>
+</a>
+<a href="case/space-groove.html" class="case ">
+<img src="uploads/spacegroove_1669692843.png" class="icon_case" alt="">
+<div class="info">
+<div class="name">SPACE GROOVE</div>
+<div class="price">
+299 ₽
+</div>
+</div>
+</a>
+<a href="case/ruined.html" class="case ">
+<img src="uploads/draven_1669692647.png" class="icon_case" alt="">
+<div class="info">
+<div class="name">RUINED</div>
+<div class="price">
+299 ₽
+</div>
+</div>
+</a>
+<a href="case/coven.html" class="case ">
+<img src="uploads/noname_1669692671.png" class="icon_case" alt="">
+<div class="info">
+<div class="name">COVEN</div>
+<div class="price">
+299 ₽
+</div>
+</div>
+</a>
+<a href="case/dragonmancer.html" class="case ">
+<img src="uploads/dragonmancer_1669692691.png" class="icon_case" alt="">
+<div class="info">
+<div class="name">DRAGONMANCER</div>
+<div class="price">
+299 ₽
+</div>
+</div>
+</a>
+<a href="case/crime-city-nightmare.html" class="case ">
+<img src="uploads/nightmare_1669692710.png" class="icon_case" alt="">
+<div class="info">
+<div class="name">Crime City Nightmare</div>
+<div class="price">
+299 ₽
+</div>
+</div>
+</a>
+<a href="case/nightbringer.html" class="case ">
+<img src="uploads/nightbringer_1669692770.png" class="icon_case" alt="">
+<div class="info">
+<div class="name">Nightbringer</div>
+<div class="price">
+299 ₽
+</div>
+</div>
+</a>
+<a href="case/dawnbringer.html" class="case ">
+<img src="uploads/dawnbr_1669692786.png" class="icon_case" alt="">
+<div class="info">
+<div class="name">Dawnbringer</div>
+<div class="price">
+299 ₽
+</div>
+</div>
+</a>
+<a href="case/cafe-cuties.html" class="case ">
+<img src="uploads/cafe_1669692855.png" class="icon_case" alt="">
+<div class="info">
+<div class="name">Cafe Cuties</div>
+<div class="price">
+299 ₽
+</div>
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="info_block_section">
+<div class="container">
+<img src="images/icons/infoblock/stabby_logo_loop.gif" alt="" class="picture">
+<div class="content">
+<div class="title">
+<b class="color">STADDY.GG</b> <b>— ЛУЧШИЕ КЕЙСЫ</b> STANDOFF 2 И НЕ ТОЛЬКО!
+</div>
+<div class="desc">
+На нашем официальном сайте вы можете открыть Стандофф 2 кейсы по самым выгодным ценам. Для вашего удобства вывод скинов осуществляется практически мгновенно. Кроме этого, вам доступны бесплатные кейсы Standoff 2 — без каких либо вложений и с отличным дропом. У нас лучшая окупаемость и высокие шансы на дорогие предметы, можно выиграть даже крутой нож! Открывайте кейсы Стендофф без регистрации, у нас простая авторизация через ВК или Google.
+</div>
+<div class="label">
+САМЫЙ ЧЕСТНЫЙ ТОЛЬКО STADDY
+</div>
+</div>
+<div class="block-info_list">
+<div class="block-info garant">
+<img src="images/icons/infoblock/garant.svg" alt="" class="icon">
+<div class="info">
+<div class="title">Гарантированная доставка</div>
+<div class="desc">Стараемся максимально быстро отправить Вам выигранную вещь. Даже если произошли какие-то задержки, вы можете написать нашей тех. поддержке и решить проблему.</div>
+</div>
+</div>
+<div class="block-info opacity">
+<img src="images/icons/infoblock/opacity.svg" alt="" class="icon">
+<div class="info">
+<div class="title">Прозрачность и честность</div>
+<div class="desc">Мы работаем абсолютно прозрачно. Вы можете посмотреть инвентари, наши отзывы в группе вк или на сайте и убедиться в том, что все вещи в кейсах у нас в наличии.</div>
+</div>
+</div>
+<div class="block-info price">
+<img src="images/icons/infoblock/price.svg" alt="" class="icon">
+<div class="info">
+<div class="title">Низкие цены</div>
+<div class="desc">Мы периодически будем радовать Вас скидками и акциями, которые помогут сохранить Ваши деньги и позволят открывать всё больше и больше кейсов </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div wire:id="VDVpWO2VgQ9wc7Cpm0l2" wire:initial-data="{&quot;fingerprint&quot;:{&quot;id&quot;:&quot;VDVpWO2VgQ9wc7Cpm0l2&quot;,&quot;name&quot;:&quot;counter&quot;,&quot;locale&quot;:&quot;en&quot;,&quot;path&quot;:&quot;\/&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;v&quot;:&quot;acj&quot;},&quot;effects&quot;:{&quot;listeners&quot;:[]},&quot;serverMemo&quot;:{&quot;children&quot;:[],&quot;errors&quot;:[],&quot;htmlHash&quot;:&quot;88c881f0&quot;,&quot;data&quot;:{&quot;count&quot;:0},&quot;dataMeta&quot;:[],&quot;checksum&quot;:&quot;88cafc1660e31a00a7ee8ff27c1317ade55fbb8ddbcf2f925673f06a14286d48&quot;}}" class="section_statistic" wire:poll.1000ms="">
+<div class="container">
+<div class="stat_block opencase">
+<img src="images/icons/statistic/opencase.svg" alt="" class="icon">
+<div class="value">14 405 537</div>
+<div class="text">Кейсов открыто</div>
+</div>
+<div class="stat_block users">
+<img src="images/icons/statistic/users.svg" alt="" class="icon">
+<div class="value">2 001 465</div>
+<div class="text">Пользователей</div>
+</div>
+<div class="stat_block contract">
+<img src="images/icons/statistic/contracts.svg" alt="" class="icon">
+<div class="value">237 079</div>
+<div class="text">Контрактов</div>
+</div>
+<div class="stat_block contract">
+<img src="images/icons/statistic/contracts.svg" alt="" class="icon">
+<div class="value">347 284</div>
+<div class="text">Апгрейдов</div>
+</div>
+</div>
+</div>
+
+<footer>
+<div class="container">
+<div class="left">
+<div class="info">
+<div class="title">ОТКРЫТИЕ СТАНДОФФ 2 КЕЙСОВ</div>
+<div class="text">
+Наша команда работает 24 часа 7 дней в неделю для того, чтобы вы могли пользоваться действительно надежным сайтом и получали оперативную поддержку для решения всех ваших вопросов. Именно это позволяет нам лидировать среди конкурентов и привлекать большее число активных пользователей. Вам представлен специализированный проект по открытию стендофф 2 кейсов, доступным по самым низким ценам, не говоря о быстром выводе скинов, что не может не радовать. Также у нас имеются промокоды, которые можно использовать для получения различных бонусов. Мы ценим наше комьюнити, поэтому у нас присутствует и бесплатные стендов 2 кейсы с отличными шансами на дроп. Можно выбить даже нож, и это реальность, смотрите скриншоты довольных игроков в нашей группе ВКонтакте. У нас все реализовано крайне просто, без регистрации, достаточно сделать пару нажатий мыши для того, чтобы начать открывать лучшие стандоф кейсы. Присоединяйтесь к нам, вас ждут незабываемые впечатления!
+</div>
+</div>
+<div class="navbar">
+<div class="title">Навигация</div>
+<div class="links">
+<div class="column">
+<a href="index.htm">Главная</a>
+<a href="case/sharp-case.html">Помощь</a>
+<a href="contact.html">Контакты</a>
+<a href="faq.html">F.A.Q</a>
+</div>
+<div class="column">
+<a href="">Магазин</a>
+<a href="">Бонусы</a>
+
+<a href="index.htm">Топ пользователей</a>
+</div>
+</div>
+</div>
+</div>
+<img src="images/icons/logo3333.png" alt="" class="logo">
+<div class="right">
+<div class="payments">
+<div class="title">Мы принимаем</div>
+<img src="images/icons/footer/payments.webp" alt="">
+</div>
+</div>
+</div>
+</footer>
+<a href="wheel.html" class="tickets">
+<div class="icon">
+<svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0.202148 6.43255C0.202148 2.92342 3.04696 0.0786133 6.55608 0.0786133H9.6235C13.1326 0.0786133 15.9774 2.92342 15.9774 6.43255C15.9774 9.94167 13.1326 12.7865 9.6235 12.7865H9.31676V15.8539C9.31676 15.8539 0.202148 14.3202 0.202148 6.43255ZM9.70719 2.91904C10.1585 3.21877 10.499 3.70474 10.499 4.35634C10.499 5.04783 10.2199 5.55614 9.7681 5.86726C9.58974 5.98802 9.39289 6.07889 9.1853 6.13632V6.80765C9.1853 6.89397 9.16829 6.97944 9.13526 7.05919C9.10223 7.13893 9.05381 7.21139 8.99277 7.27243C8.93174 7.33347 8.85928 7.38188 8.77953 7.41492C8.69978 7.44795 8.61431 7.46495 8.52799 7.46495C8.44167 7.46495 8.3562 7.44795 8.27645 7.41492C8.1967 7.38188 8.12424 7.33347 8.06321 7.27243C8.00217 7.21139 7.95376 7.13893 7.92072 7.05919C7.88769 6.97944 7.87069 6.89397 7.87069 6.80765V5.582C7.87065 5.41523 7.934 5.25468 8.04791 5.13288C8.16182 5.01108 8.31777 4.93712 8.48417 4.92601C8.72694 4.90979 8.91098 4.86159 9.02228 4.78491C9.06722 4.75512 9.1035 4.71401 9.12745 4.66571C9.15374 4.61313 9.18442 4.51935 9.18442 4.35591C9.18442 4.21875 9.13052 4.11402 8.97934 4.01323C8.80756 3.8993 8.5315 3.81516 8.19978 3.80465C7.872 3.79413 7.55343 3.85811 7.31899 3.9716C7.08411 4.08553 6.99823 4.21349 6.97369 4.3077C6.9538 4.39297 6.91709 4.4734 6.8657 4.54427C6.8143 4.61515 6.74927 4.67505 6.67441 4.72045C6.59955 4.76585 6.51638 4.79583 6.42977 4.80865C6.34316 4.82146 6.25487 4.81685 6.17007 4.79507C6.08527 4.7733 6.00568 4.7348 5.93596 4.68184C5.86625 4.62888 5.80781 4.56253 5.76409 4.48668C5.72037 4.41083 5.69224 4.32701 5.68136 4.24014C5.67047 4.15327 5.67705 4.0651 5.70071 3.9808C5.85145 3.39318 6.29141 3.00931 6.74582 2.78889C7.20155 2.5676 7.73747 2.47426 8.24185 2.49048C8.74227 2.50625 9.27688 2.63246 9.70719 2.91904ZM8.52799 10.1573C8.76043 10.1573 8.98335 10.0649 9.1477 9.90057C9.31206 9.73621 9.4044 9.5133 9.4044 9.28086C9.4044 9.04842 9.31206 8.82551 9.1477 8.66115C8.98335 8.49679 8.76043 8.40446 8.52799 8.40446C8.29555 8.40446 8.07264 8.49679 7.90828 8.66115C7.74392 8.82551 7.65159 9.04842 7.65159 9.28086C7.65159 9.5133 7.74392 9.73621 7.90828 9.90057C8.07264 10.0649 8.29555 10.1573 8.52799 10.1573Z" fill="white"></path>
+</svg>
+</div>
+Техническая поддержка
+</a> <div class="other_footer">
+<div class="container">
+<div class="links">
+<a href="policy.html">Политика приватности</a><a href="agrement.html">Пользовательское соглашение</a>
+</div>
+<div class="copy">Copyright 2019 STADDY.GG</div>
+<div class="social">
+<a href="https://vk.com/staddydrop1"><img src="images/icons/footer/vk.svg" alt=""></a>
+<a href="https://t.me/staddydrop"><img src="images/icons/footer/tg.svg" alt=""></a>
+<a href="https://www.youtube.com/channel/UCzjy9aZz6ILElVkhSp29PVQ"><img src="images/icons/footer/yt.svg" alt=""></a>
+<a href="https://www.instagram.com/staddydrop.one/"><img src="images/icons/footer/inst.svg" alt=""></a>
+<a href="https://www.tiktok.com/@staddydrop_one"><img src="images/icons/footer/tt.svg" alt=""></a>
+</div>
+</div>
+</div>
+<script src="npm/vue%402.6.14"></script>
+<script>
+                var user_socket = null;
+        var user_id = null;
+                var page_current = "index";
+        var page_socket = "/";
+                var page_socket_params = null;
+            </script>
+<script src="js/app-14.js?v=1676893905"></script>
+<script src="ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="js/api/openapi.js?169"></script>
+
+<script src="livewire/livewire.js?id=de3fca26689cb5a39af4" data-turbo-eval="false" data-turbolinks-eval="false"></script>
+<script data-turbo-eval="false" data-turbolinks-eval="false">
+    if (window.livewire) {
+	    console.warn('Livewire: It looks like Livewire\'s @livewireScripts JavaScript assets have already been loaded. Make sure you aren\'t loading them twice.')
+	}
+
+    window.livewire = new Livewire();
+    window.livewire.devTools(true);
+    window.Livewire = window.livewire;
+    window.livewire_app_url = '';
+    window.livewire_token = 'KFhiqZjoW97yaAAjn1aPKrW2MFClTjkALhj3JD7D';
+
+	/* Make sure Livewire loads first. */
+	if (window.Alpine) {
+	    /* Defer showing the warning so it doesn't get buried under downstream errors. */
+	    document.addEventListener("DOMContentLoaded", function () {
+	        setTimeout(function() {
+	            console.warn("Livewire: It looks like AlpineJS has already been loaded. Make sure Livewire\'s scripts are loaded before Alpine.\\n\\n Reference docs for more info: http://laravel-livewire.com/docs/alpine-js")
+	        })
+	    });
+	}
+
+	/* Make Alpine wait until Livewire is finished rendering to do its thing. */
+    window.deferLoadingAlpine = function (callback) {
+        window.addEventListener('livewire:load', function () {
+            callback();
+        });
+    };
+
+    let started = false;
+
+    window.addEventListener('alpine:initializing', function () {
+        if (! started) {
+            window.livewire.start();
+
+            started = true;
+        }
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+        if (! started) {
+            window.livewire.start();
+
+            started = true;
+        }
+    });
+</script>
+</body>
+</html>
